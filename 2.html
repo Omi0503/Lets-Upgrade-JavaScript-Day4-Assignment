@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Qestion 2 Day 4</title>
+</head>
+
+<body style="background-color: powderblue;">
+    <h2>Answer:2 Day4</h2>
+    <div class="container" style='max-width: 90%; margin: auto; background-color: goldenrod; font-family: Lucida Sans;'>
+        <h3>Press F12 and navigate to console and then messages.</h3>
+        <p><b>Destructuring the object.</b></p>
+
+    </div>
+
+    <script>
+    console.log("Answer 2");
+
+// splitting the input by space
+
+const student = {
+  name: "Helsinki",
+  age: 24,
+  projects: {
+    diceGame: "Two player dice game using JavaScript",
+  },
+};
+
+let {
+  name,
+  age,
+  projects: { diceGame },
+} = student;
+
+// showing the object(key:value)
+console.log({ name, age });
+// showing the values
+console.log(name, age, diceGame);
+    </script>
+
+</body>
+
+</html>

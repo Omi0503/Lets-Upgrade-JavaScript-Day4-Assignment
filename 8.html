@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Qestion 8 Day 4</title>
+</head>
+
+<body style="background-color: gainsboro;">
+
+    <h2>Answer:8 Day4</h2>
+    
+    <div class="container"
+        style='max-width: 90%; margin: auto; background-color: rgb(119, 190, 207); font-family: Lucida Sans;'>
+        
+        <h2>Fat arrow notation</h2>
+        <p>function ask(question, yes, no) {<br>
+            if (confirm(question)) yes()<br>
+            else no()<br>
+          }</p>
+    </div>
+
+    <script type="text/javascript">
+ask = (question, yes, no) => {
+  if (confirm(question)) yes();
+  else no();
+};
+
+ask(
+  "Do you agree?",
+  function () {
+    alert("You agreed.");
+  },
+  function () {
+    alert("You canceled the execution.");
+  }
+);
+    </script>
+
+</body>
+
+</html>
